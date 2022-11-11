@@ -1,0 +1,102 @@
+body {
+    background: rgba(11, 197, 233, 1);
+}
+
+.container {
+    width: 250px;
+    height: 200px;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(167, 14, 167);
+
+}
+
+@keyframes mymove {
+    0% {
+        background: redradial-gradient(circle, rgba(23, 11, 232, 1) 17%, rgba(11, 197, 233, 1) 96%);
+    }
+
+    10% {
+        background-color: #DDA0DD;
+    }
+
+    20% {
+        background-color: #662d91;
+    }
+
+    30% {
+        background-color: #800080;
+    }
+
+    40% {
+        background-color: #E6E6FA;
+    }
+
+    50% {
+        background-color: #720e9e;
+    }
+
+    65% {
+        background-color: #662d91;
+    }
+
+    80% {
+        background-color: #33006F;
+    }
+}
+
+#code {
+    margin: auto;
+    width: 300%;
+    right: 215px;
+    border: 5px solid black;
+    border-style: groove;
+    box-shadow: black;
+    border-radius: 5px;
+
+}
+
+.text {
+    position: absolute;
+    color: white;
+    margin: auto;
+}
+
+.text h1 {
+
+    text-align: center;
+    margin: auto;
+    font-size: 170px;
+    line-height: 160px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background:url("{{ url_for('static',filename='img/back.png') }}");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.css {
+    position: absolute;
+    height: 300px;
+    width: 670px;
+    background-color:rgba(11, 197, 233, 1);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.decoration {
+    z-index: -3;
+    opacity: 0.1;
+    height: 670px;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+
+}
